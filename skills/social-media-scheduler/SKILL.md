@@ -2,7 +2,7 @@
 name: social-media-scheduler
 description: AI social media scheduler and analytics agent. Schedule, cross-post, reschedule and analyze posts across 20+ platforms (Instagram, TikTok, YouTube Shorts, X/Twitter, LinkedIn, Facebook, Threads, Pinterest, Bluesky, Reddit, Mastodon, Telegram, Discord and more) through the Repping MCP server. Use this skill whenever the user wants to schedule or plan social posts, build a content calendar, bulk-schedule a week of content, cross-post one video to many accounts, pick best posting times, find top-performing posts, audit engagement across channels, set posting queues, or automate social media from Claude, Codex, Cursor or any AI agent — even if they never say "Repping" or "MCP".
 license: MIT
-compatibility: Needs the Repping remote MCP server (https://www.repping.ai/api/mcp, OAuth sign-in, Creator or Pro plan). No API key.
+compatibility: Needs the Repping remote MCP server (https://www.repping.ai/api/mcp, OAuth sign-in, Creator plan). No API key.
 ---
 
 # Social Media Scheduler (Repping MCP)
@@ -136,7 +136,7 @@ Show drafts before preparing when the user has not approved the wording.
 ## Error handling
 
 - `mcp_connector_plan_required` (403): the workspace plan lacks MCP access. Tell the user
-  MCP needs the Creator or Pro plan: https://www.repping.ai/pricing
+  MCP needs the Creator plan: https://www.repping.ai/pricing
 - Validation error: re-read the schema with `repping_discover`, fix the input, and try a
   new proposal (new requestId, since input changed).
 - Unknown outcome: call `repping_action_status` first. Do not create a second action to

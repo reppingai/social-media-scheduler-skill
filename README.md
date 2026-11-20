@@ -44,7 +44,7 @@ Details and limits: [`platforms.md`](skills/social-media-scheduler/references/pl
 
 ## Quick start (2 minutes)
 
-1. **Create a Repping account** at [repping.ai](https://www.repping.ai) and connect your social accounts. MCP access is on the Creator and Pro plans ([pricing](https://www.repping.ai/pricing)).
+1. **Create a Repping account** at [repping.ai](https://www.repping.ai) and connect your social accounts. MCP access is on the Creator plan ([pricing](https://www.repping.ai/pricing)).
 2. **Add the MCP server** to your agent (below). URL: `https://www.repping.ai/api/mcp`
 3. **Install the skill** (below).
 4. Ask: *"Check my Repping connection and list my accounts."*
@@ -159,7 +159,7 @@ AGENTS.md / GEMINI.md      # entry points for Codex, Gemini and other agents
 
 ## FAQ
 
-**Is it free?** The skill is MIT and free. Scheduling runs on your Repping account; MCP access needs the Creator or Pro plan.
+**Is it free?** The skill is MIT and free. Scheduling runs on your Repping account; MCP access needs the Creator plan.
 
 **Do I need an API key?** No. You sign in with OAuth. Nothing secret goes into prompts or config files.
 

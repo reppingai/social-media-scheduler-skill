@@ -1,5 +1,7 @@
 # Social Media Scheduler Skill + MCP for Claude, Codex & AI Agents
 
+![Social Media Scheduler Skill + MCP for AI agents by Repping.ai](assets/social-preview.png)
+
 **Schedule, cross-post and analyze social media posts on 20+ platforms from Claude Code, Claude.ai, Codex, Cursor, Gemini CLI, VS Code or ChatGPT.**
 An open-source (MIT) AI agent skill plus a hosted MCP server, powered by [Repping.ai](https://www.repping.ai).
 

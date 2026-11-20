@@ -49,6 +49,14 @@ Details and limits: [`platforms.md`](skills/social-media-scheduler/references/pl
 3. **Install the skill** (below).
 4. Ask: *"Check my Repping connection and list my accounts."*
 
+### Any agent (skills CLI)
+
+```bash
+npx skills add reppingai/social-media-scheduler-skill
+```
+
+Installs the skill into Claude Code, Codex, Cursor, Gemini CLI, OpenCode and other supported agents. Then add the MCP server for your agent below.
+
 ### Claude Code
 
 Plugin (skill + MCP in one step):
@@ -173,6 +181,17 @@ AGENTS.md / GEMINI.md      # entry points for Codex, Gemini and other agents
 
 - [reppingai/repping-mcp](https://github.com/reppingai/repping-mcp) — official Repping MCP server setup and the `creator-content-workflow` drafting skill.
 - [repping.ai/mcp](https://www.repping.ai/mcp) — MCP documentation.
+
+## Alternatives compared
+
+| | This skill (Repping) | Planning-only skills | Single-network tools |
+| --- | --- | --- | --- |
+| Actually schedules and publishes | ✅ 20+ platforms | ❌ text plans only | ⚠️ 1–5 networks |
+| Cross-post one video to many accounts | ✅ up to 20 accounts per post | ❌ | ⚠️ |
+| Bulk calendar (50 posts per batch) | ✅ | ❌ | ⚠️ |
+| Analytics and best time to post | ✅ | ❌ | ⚠️ |
+| Human approval before publishing | ✅ | n/a | varies |
+| API key needed | ❌ OAuth only | n/a | often |
 
 ## Contributing
 

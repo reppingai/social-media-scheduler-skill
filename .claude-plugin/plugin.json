@@ -1,0 +1,23 @@
+{
+  "name": "social-media-scheduler",
+  "version": "1.0.0",
+  "description": "AI social media scheduler for Claude: schedule, cross-post and analyze posts on 20+ platforms (Instagram, TikTok, YouTube, X, LinkedIn, Threads...) via the Repping MCP server.",
+  "author": {
+    "name": "Repping.ai",
+    "url": "https://www.repping.ai"
+  },
+  "homepage": "https://www.repping.ai/mcp",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "scheduler",
+    "mcp",
+    "claude-skill",
+    "instagram",
+    "tiktok",
+    "youtube",
+    "linkedin",
+    "content-calendar",
+    "social-media-analytics"
+  ]
+}

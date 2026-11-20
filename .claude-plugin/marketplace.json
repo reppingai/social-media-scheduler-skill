@@ -1,0 +1,18 @@
+{
+  "name": "repping-social",
+  "owner": {
+    "name": "Repping.ai",
+    "url": "https://www.repping.ai"
+  },
+  "plugins": [
+    {
+      "name": "social-media-scheduler",
+      "source": "./",
+      "description": "Schedule, cross-post and analyze social media on 20+ platforms from Claude via the Repping MCP server."
+    }
+  ],
+  "metadata": {
+    "description": "Repping.ai agent skills and MCP for social media scheduling and analytics."
+  },
+  "description": "Repping.ai agent skills and MCP for social media scheduling and analytics."
+}

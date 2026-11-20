@@ -81,6 +81,23 @@ and match it exactly. Unknown keys are rejected.
 
 Full examples with JSON inputs: [references/workflows.md](references/workflows.md).
 
+## Gaps to resolve before preparing
+
+Ask once, in one short message, for everything missing. Do not guess.
+
+- **Platform not connected** (user says X but `channels.list` has none): say so, offer
+  `channels.connect`, and continue with the platforms that exist only if the user agrees.
+- **No media or copy:** ask for the file or caption. Instagram, TikTok, YouTube and
+  Pinterest cannot take text-only posts.
+- **"All my accounts":** if there are more than 3, list them and confirm the set.
+- **Post type** (Instagram Reel vs feed vs Story, YouTube Short vs video): ask unless
+  the media makes it obvious; the `target_settings` reply shows required keys.
+- **Relative dates** ("next Tuesday", "tomorrow"): convert to an exact date, say it
+  back, and compute the UTC offset for that date in the user's timezone (DST changes it).
+- **Many targets:** build `targets` from every ID in the tool result programmatically
+  or by careful copy, then count them against the list. A dropped or mistyped ID silently
+  skips an account.
+
 ## Other common jobs
 
 - **Reschedule / cancel one post:** publisher mode, `type: "reschedule"` or `"cancel"`
@@ -100,7 +117,11 @@ Use the `analytics` domain for read-only insight. Main operations:
 `social_overview` (all accounts), `accounts`, `account` (follower and engagement series),
 `posts`, `post`, `top_posts` (rank by a metric), `best_times`, `recommendations`.
 
-Treat `null` or missing metrics as *not collected*, never as zero. Say the data period
+For "what did best", use `top_posts` (max 25 rows; set the period, metric and order
+from its schema). Summarize: drop avatar URLs and raw IDs from the user-facing answer.
+
+Treat `null`, missing or suspicious `0` metrics (for example 0 watch time on a post with
+views) as *not collected*, never as zero. Say the data period
 and freshness. Analytics reads never refresh providers; `sync_account` is a prepared
 action that needs approval. Report patterns, not raw dumps. See
 [references/analytics.md](references/analytics.md) for a report template.

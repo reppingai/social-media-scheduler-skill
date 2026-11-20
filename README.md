@@ -54,7 +54,7 @@ Details and limits: [`platforms.md`](skills/social-media-scheduler/references/pl
 Plugin (skill + MCP in one step):
 
 ```bash
-/plugin marketplace add <owner>/social-media-scheduler-skills
+/plugin marketplace add reppingai/social-media-scheduler-skill
 /plugin install social-media-scheduler@repping-social
 ```
 
@@ -62,8 +62,8 @@ Or manually:
 
 ```bash
 claude mcp add --transport http repping https://www.repping.ai/api/mcp
-git clone https://github.com/<owner>/social-media-scheduler-skills
-cp -r social-media-scheduler-skills/skills/social-media-scheduler ~/.claude/skills/
+git clone https://github.com/reppingai/social-media-scheduler-skill
+cp -r social-media-scheduler-skill/skills/social-media-scheduler ~/.claude/skills/
 ```
 
 Then run `/mcp` and authenticate `repping`.

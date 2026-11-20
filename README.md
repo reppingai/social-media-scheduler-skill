@@ -169,12 +169,17 @@ AGENTS.md / GEMINI.md      # entry points for Codex, Gemini and other agents
 
 **Which AI agents work?** Any MCP client with Streamable HTTP + OAuth: Claude Code, Claude.ai, Claude Desktop, Codex, Cursor, VS Code Copilot, Gemini CLI, Windsurf, ChatGPT.
 
+## Related
+
+- [reppingai/repping-mcp](https://github.com/reppingai/repping-mcp) — official Repping MCP server setup and the `creator-content-workflow` drafting skill.
+- [repping.ai/mcp](https://www.repping.ai/mcp) — MCP documentation.
+
 ## Contributing
 
 Issues and PRs are welcome: new workflows, platform tips, prompt examples, translations.
 
 ## License
 
-[MIT](LICENSE) © Repping.ai
+[MIT](LICENSE) © Repping Labs LLC
 
 <sub>Keywords: social media scheduler, AI social media manager, Claude skill, Claude Code skill, agent skills, MCP server, social media MCP, Codex skill, schedule Instagram posts with AI, TikTok scheduler, YouTube Shorts scheduler, LinkedIn scheduler, content calendar AI, cross-posting tool, social media analytics, best time to post, Buffer alternative, Hootsuite alternative, Postiz alternative.</sub>
